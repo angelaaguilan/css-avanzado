@@ -1,8 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;    
 }
 
 nav {
@@ -223,7 +222,7 @@ li a:hover {
         grid-template-areas:
         "nav section"
         "nav main"
-        "footer main";
+        "footer footer";
         height: 100vh;
     }
     
