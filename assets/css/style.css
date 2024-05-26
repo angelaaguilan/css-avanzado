@@ -6,7 +6,7 @@
 
 nav {
     grid-area: nav;
-    background: green;
+    background-color: rgb(249, 199, 106);
     color: white;
     display: flex; 
     justify-content:space-around;
@@ -15,7 +15,7 @@ nav {
 
 section {
     grid-area: section;
-    background-color: rgb(192, 190, 190);
+    background-color: rgb(52, 190, 52);
     color: black;
     display: flex;
     flex-direction: column;
@@ -34,7 +34,7 @@ main {
 
 footer {
     grid-area: footer;
-    background: #001e5a;
+    background: green;
     color: white;
     display: flex;
     flex-direction: column;
@@ -60,7 +60,8 @@ footer {
     justify-content: space-evenly;
 }
 
-.nombre-electrico {
+.nombre-centro {
+    font-weight: 300;
     padding-left: 0.5rem;
 }
 
@@ -70,16 +71,13 @@ footer {
     border: none;
 }
 
-/* .dog-mov {
-    transform: trasladar infinite;
-} */
-
-
 .dog-mov {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
     position: relative;
     animation: movement 5s infinite; 
 }
-
 
 @keyframes movement {
     0%, 100% {
@@ -87,7 +85,7 @@ footer {
         color: rgb(196, 81, 178);
     }
     50% {
-        left: 88px;
+        left: 23vw;
         color: rgb(24, 45, 181);
     }
 }
@@ -112,13 +110,15 @@ li a:hover {
     width: 7rem;
 }
 
-/* Tarjeta con la imagen del auto */
+/* Tarjeta con la imagen de la mascota */
 .card {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: white;
+    background-color: rgb(220, 230, 173);
+     /* white; */
+
     border: 1px solid gray;
     height: 24rem;
     width: 18rem;
@@ -237,6 +237,7 @@ li a:hover {
     }
 }
 
+
 /* MEDIA QUERIES PARA ESCRITORIO*/
 @media (width >= 992px) {
     * {
@@ -289,7 +290,7 @@ li a:hover {
         padding-bottom: 1rem;
     }
 
-    .nombre-electrico {
+    .nombre-centro {
         font-size: 1rem;
     }
 
