@@ -70,12 +70,6 @@ footer {
     text-align: center;
 }
 
-.icono {
-    background-color: #0037a1;
-    color: white;
-    border: none;
-}
-
 .dog-mov-2xs {
     display: contents;
 }
@@ -87,7 +81,6 @@ footer {
 .dog-mov-xl {
     display: none;
 }
-
 
 .dog-mov {
     display: flex;
@@ -109,7 +102,7 @@ footer {
     }
 }
 
-/* menu hamburguesa */
+/* MENU HAMBURGUESA */
 #menu ul {
     list-style: none;
     margin: 0;
@@ -142,7 +135,6 @@ footer {
 #menu ul li:hover {
     background: #5b78a7;
 }
-
 
 /* menu desplegable */
 #menu ul ul {
@@ -247,7 +239,7 @@ li a:hover {
     font-weight: 700;
 }
 
-.color-icono{
+.color-icono {
     color: #2196F3;
 }
 
@@ -283,6 +275,7 @@ li a:hover {
         padding-bottom: 2rem;
         font-weight: 400;
     }
+
     .container-nav {
         display: flex;
         justify-content: space-between;
@@ -310,7 +303,6 @@ li a:hover {
     .dog-mov-sm {
         display: contents;
     }
-
 
     .dog-mov {
         display: flex;
@@ -435,11 +427,6 @@ li a:hover {
             display: none;
         }
 
-    /* .dog-mov-xl {
-        display: contents;
-    } */
-
-
    .dog-mov-xl {
        display: flex;
        flex-direction: column;
@@ -450,9 +437,7 @@ li a:hover {
    }
 
    @keyframes movement {
-
-       0%,
-       100% {
+       0%, 100% {
            left: 0px;
            color: rgb(226, 114, 209);
        }
@@ -462,7 +447,6 @@ li a:hover {
            color: rgb(163, 24, 181);
        }
    }
-
 
     .grilla-pdtos {
         display: grid;
@@ -492,7 +476,7 @@ li a:hover {
         border-radius: 10%;
     }
 
-    .txt-auto {
+    .txt-mascota {
         font-size: 1.2rem;
     }
 
