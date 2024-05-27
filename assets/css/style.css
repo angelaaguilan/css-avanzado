@@ -1,14 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;    
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
 }
 
 nav {
     grid-area: nav;
     background-color: #2196F3;
     color: white;
-    display: flex; 
+    display: flex;
     justify-content:space-around;
     align-items: center;
 }
@@ -61,8 +65,9 @@ footer {
 }
 
 .nombre-centro {
-    font-weight: 300;
+    font-weight: 600;
     padding-left: 0.5rem;
+    text-align: center;
 }
 
 .icono {
@@ -71,12 +76,26 @@ footer {
     border: none;
 }
 
+.dog-mov-2xs {
+    display: contents;
+}
+
+.dog-mov-sm {
+    display: none;
+}
+
+.dog-mov-xl {
+    display: none;
+}
+
+
 .dog-mov {
     display: flex;
     flex-direction: column;
-    gap: 0.3rem;
+    gap: 20px;
+    padding-top: 10px;
     position: relative;
-    animation: movement 5s infinite; 
+    animation: movement 5s infinite;
 }
 
 @keyframes movement {
@@ -85,9 +104,71 @@ footer {
         color: rgb(196, 81, 178);
     }
     50% {
-        left: 23vw;
+        left: 80px;
         color: rgb(24, 45, 181);
     }
+}
+
+/* menu hamburguesa */
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* items del menu */
+#menu ul li {
+    background-color: #2e518b;
+}
+
+/* enlaces del menu */
+#menu ul a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 9px;
+}
+
+/* items del menu */
+#menu ul li {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+/* efecto al pasar el ratón por los items del menu */
+#menu ul li:hover {
+    background: #5b78a7;
+}
+
+
+/* menu desplegable */
+#menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #eee;
+    padding: 0;
+}
+
+/* items del menu desplegable */
+#menu ul ul li {
+    float: none;
+    width: 150px
+}
+
+/* enlaces de los items del menu desplegable */
+#menu ul ul a {
+    line-height: 100%;
+    padding: 10px 15px;
+}
+
+/* items del menu desplegable al pasar el ratón */
+#menu ul li:hover>ul {
+    display: block;
 }
 
 .menu-lateral {
@@ -116,7 +197,6 @@ li a:hover {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    /* background-color: rgb(197, 220, 91);  */
     color: #4CAF50 ;
     border: 1px solid gray;
     height: 24rem;
@@ -171,12 +251,16 @@ li a:hover {
     color: #2196F3;
 }
 
+
 /* TABLET */
+
 @media ((width >= 576px) and (width < 992px)) {
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
     }
     
     .container-principal {
@@ -191,12 +275,13 @@ li a:hover {
     }
 
     section {
-        justify-content:flex-start; 
-        padding-top: 3rem;
+        justify-content: center;
+        align-items: center;
     }
 
     section div p {
         padding-bottom: 2rem;
+        font-weight: 400;
     }
     .container-nav {
         display: flex;
@@ -207,6 +292,46 @@ li a:hover {
 
     .menu-superior {
         display: none;
+    }
+
+    .nombre-centro {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .dog-mov-2xs {
+        display: none;
+    } 
+
+    .dog-mov-xl {
+        display: none;
+    }
+
+    .dog-mov-sm {
+        display: contents;
+    }
+
+
+    .dog-mov {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        padding-top: 10px;
+        position: relative;
+        animation: movement 8s infinite;
+    }
+
+    @keyframes movement {
+        0%,
+        100% {
+            left: 0px;
+            color: rgb(226, 114, 209);
+        }
+
+        50% {
+            left: 80%;
+            color: rgb(163, 24, 181);
+        }
     }
 
     .menu-lateral {
@@ -227,8 +352,7 @@ li a:hover {
     section select option{
         font-size: 10px;
     }
-        
-
+    
     .grilla-pdtos {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -302,6 +426,43 @@ li a:hover {
     .nombre-centro {
         font-size: 1rem;
     }
+
+    .dog-mov-2xs {
+            display: none;
+        }
+    
+    .dog-mov-sm {
+            display: none;
+        }
+
+    /* .dog-mov-xl {
+        display: contents;
+    } */
+
+
+   .dog-mov-xl {
+       display: flex;
+       flex-direction: column;
+       gap: 35px;
+       padding-top: 20px;
+       position: relative;
+       animation: movement 8s infinite;
+   }
+
+   @keyframes movement {
+
+       0%,
+       100% {
+           left: 0px;
+           color: rgb(226, 114, 209);
+       }
+
+       50% {
+           left: 80%;
+           color: rgb(163, 24, 181);
+       }
+   }
+
 
     .grilla-pdtos {
         display: grid;
