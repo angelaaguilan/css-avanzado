@@ -127,11 +127,13 @@ li a:hover {
 
 .img-mascota {
     height: 40%;
+    width: 50%;
 }
 
 .img-mascota:hover {
-    height: 50%;
-    border-radius: 40%;
+    height: 60%;
+    width: 80%;
+    border-radius: 10%;
 }
 
 .txt-mascota {
@@ -319,8 +321,14 @@ li a:hover {
         box-shadow: 7px 7px 12px rgba(20, 20, 20, 0.3);
     }
 
-    main div div img {
-        width: 7rem;
+    .img-mascota {
+        height: 40%;
+    }
+
+    .img-mascota:hover {
+        height: 60%;
+        width: 70%;
+        border-radius: 10%;
     }
 
     .txt-auto {
