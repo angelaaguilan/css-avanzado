@@ -6,7 +6,7 @@
 
 nav {
     grid-area: nav;
-    background-color: rgb(249, 199, 106);
+    background-color: #2196F3;
     color: white;
     display: flex; 
     justify-content:space-around;
@@ -15,7 +15,7 @@ nav {
 
 section {
     grid-area: section;
-    background-color: rgb(52, 190, 52);
+    background-color: #b1b0b0;
     color: black;
     display: flex;
     flex-direction: column;
@@ -34,8 +34,8 @@ main {
 
 footer {
     grid-area: footer;
-    background: green;
-    color: white;
+    background-color: #E0E0E0;
+    color: #000000;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -116,9 +116,8 @@ li a:hover {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(220, 230, 173);
-     /* white; */
-
+    /* background-color: rgb(197, 220, 91);  */
+    color: #4CAF50 ;
     border: 1px solid gray;
     height: 24rem;
     width: 18rem;
@@ -135,24 +134,22 @@ li a:hover {
     border-radius: 40%;
 }
 
-/* .transform: rotate(45deg) scale(1.5); */
-
 .txt-mascota {
     font-size: 1.2rem;
 }
 
 .btn-ver {
+    background-color: #FF9800;
     color: white;
     height: 3rem;
     width: 6rem;
     border-radius: 20px;
-    background-color: #0037a1;
 }
 
 .btn-ver:hover {
     font-size: 15px;
     width: 7rem;
-    background-color: #1b55ca;
+    background-color: #b4730a;
 }
 
 .iconos-footer {
@@ -162,13 +159,14 @@ li a:hover {
     gap: 0.5rem;
 }
 
-.icono-img {
-    color: white; 
-}
-
 .txt-footer {
     font-size: 0.8rem;
     padding-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.color-icono{
+    color: #2196F3;
 }
 
 /* TABLET */
@@ -176,12 +174,12 @@ li a:hover {
     * {
         margin: 0;
         padding: 0;
-        font-size: 62,5%;
+        box-sizing: border-box;
     }
     
     .container-principal {
         display: grid;
-        grid-template-columns: 8rem 1fr;
+        grid-template-columns: 1fr 9fr;
         grid-template-rows: 1fr 12fr 1fr;
         grid-template-areas:
             "nav nav"
@@ -219,6 +217,15 @@ li a:hover {
         font-size: 1rem;
         gap: 1rem;
     }
+
+    .lista-select {
+        width: 6rem;
+    }
+
+    section select option{
+        font-size: 10px;
+    }
+        
 
     .grilla-pdtos {
         display: grid;
@@ -306,10 +313,9 @@ li a:hover {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        background-color: white;
         border: 1px solid gray;
-        height: 14rem;
-        width: 13rem;
+        height: 16rem;
+        width: 15rem;
         box-shadow: 7px 7px 12px rgba(20, 20, 20, 0.3);
     }
 
@@ -322,11 +328,11 @@ li a:hover {
     }
 
     .btn-ver {
+        background-color: #FF9800;
         color: white;
         height: 2rem;
         width: 5rem;
         border-radius: 20px;
-        background: #0037a1;
     }
 
     .txt-footer {
